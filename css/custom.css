@@ -1,0 +1,446 @@
+ul {
+    list-style-type: none;
+  }
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 30px 16px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 30px 16px rgba(0, 0, 0, 0.25);
+}
+
+.image-blurred-edge {
+    background-image: url('http://lorempixel.com/200/200/city/9');
+    width: 200px;
+    height: 200px;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+.section-title {
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    color: #007BFF;
+    font-weight: bolder;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.product-card {
+    background-color: #CECFD3;
+    /* padding: 20px;
+    padding-bottom: 5px; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.product-card-image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+}
+
+.product-card-image img {
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.product-card-bar {
+    padding: 10px 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.product-card-button,
+.product-card-price {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeLoop {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#logo-name-input,
+#logo-contact-input {
+
+    padding-left: 15px;
+    padding-right: 5px;
+    margin-left: 10px;
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #007bff;
+}
+
+#logo-name-input::-webkit-input-placeholder,
+#logo-contact-input::-webkit-input-placeholder {
+    color: #007bff;
+    opacity: 0.5;
+    animation-name: fadeLoop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#logo-name-input:focus,
+#logo-contact-input:focus {
+    border: none;
+}
+
+.product-card-name-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    padding: 12px 12px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.product-card-bar.buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.product-card-name-final-price {
+    margin-top: 20px;
+}
+
+#final-price {
+    font-size: 26px;
+}
+
+#btn-buy {
+    margin-top: 20px;
+    background-color: #353353;
+}
+
+.bank-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #5A84F1;
+    margin-bottom: 10px;
+}
+
+.bank-card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bank-card-info .left {
+    display: flex;
+    flex-direction: row;
+}
+
+.bank-img {
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.bank-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+}
+
+.bank-info {
+    background-color: #007bff;
+    padding: 2px 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bank-info svg {
+    margin-left: 5px;
+}
+
+.bank-note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #353353;
+}
+
+.bank-note span {
+    text-align: center;
+    line-height: normal;
+}
+
+#current-id,
+.bold-d {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.contact-img {
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+
+.contact-link {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #007bff;
+}
+
+.contact-item:hover .contact-link {
+    color: #FFFFFF;
+}
+
+#inputPassword,
+#inputUsername {
+    margin-bottom: 20px;
+}
+
+.products-editor-wrap {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+}
+
+.product-editor-wrap {
+    /* border-top: 1px solid #353353; */
+    border-bottom: 1px solid #35335377;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.thumb {
+    position: relative;
+    max-height: 50%;
+}
+
+.img-gallery {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+.center-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.gallery-thumb {
+    border-radius: 20px;
+}
+
+.text-gallery-thumb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #35335394;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: #CECFD3;
+}
+
+.box-content {
+    background: #E6F2FF;
+    border-radius: 15px;
+    padding: 15px;
+    border: 2px dotted #007BFF;
+    /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23007BFFFF' stroke-width='5' stroke-dasharray='6%2c 14' stroke-dashoffset='100' stroke-linecap='square'/%3e%3c/svg%3e");
+border-radius: 20px; */
+/* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23007BFFFF' stroke-width='4' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+border-radius: 20px; */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-text {
+    color: #007BFF;
+}
+
+.btn-duong {
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    color: #007BFF;
+    font-weight: bolder;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    /* border-bottom: 4px solid;
+    border-right: 4px solid; */
+}
+
+.btn-duong:hover {
+    color: #0363c9;
+}
+
+.rate-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.rate-box img {
+    margin-bottom: 25px;
+    border-radius: 100%;
+    border: 2px solid #007BFF;
+}
+
+.rate-box span {
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    line-height: initial;
+}
+
+.rate-box p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#slider { 
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+    /* box-shadow: #007BFF 0px -50px 36px -28px inset;
+     */
+     
+}
+
+#wrapper-slider {
+    box-shadow: #007BFD -44px -130px 64px -101px inset;
+}
+
+/* #slider::after {
+    content: "";
+} */
+
+.slide img {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.btn-min-w { 
+    min-width: 330px;
+    padding: 10px 8px
+}
+
+.btn-duong-border {
+    /* border: 2px solid #007BFF; */
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+}
+
+.desktop-header-duong .vertical-menu i{ 
+    padding-right: 15px;
+}
+
+.desktop-header-duong .nav-link {
+    display: block;
+    padding: 5px 0.5rem;
+}
+
+.desktop-header-duong .nav-link .fa-solid{
+    margin-right: 10px;
+}
+.active-menu {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 3px solid #007BFD;
+}
+
+.desktop-header-duong {
+    display: none;
+    /* padding-bottom: 0px; */
+}
+
+.open {
+    display: block;
+}
